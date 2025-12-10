@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тех Задание Green Api</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./core.js" defer></script>
+</head>
+<body>
+    <section class="container">
+        <div class="left-container">
+            <div class="input-container">
+                <input id="apiUrl" placeholder="apiUrl" type="text" name="getApiUrl">
+                <input id="idInstance" placeholder="idInstance" type="text" name="getIdInstance">
+                <input id="apiTokenInstance" placeholder="apiTokenInstance" type="text" name="getApiTokenInstance">
+            </div>
+            <div class="button-container">
+                <button onclick={onClickGetSettings()}>GetSettings</button>
+                <button onclick="{onClickGetStateInstance()}">getStateInstance</button>
+            </div>
+            <div class="messageSender-container">
+                <div class="input-container">
+                    <input id="userNumber" placeholder="Users number" type="tel" name="userNumber">
+                    <input id="userText" placeholder="Text for that user" type="text" name="UserSentText">
+                </div>
+                <div class="button-container">
+                    <button onclick={onClickSendMessage()}>SendMessage</button>
+                </div>
+            </div>
+            <div class="file-container">
+                <div class="input-container">
+                    <input id="userFileNumber" placeholder="Users number" type="tel" name="userNumber">
+                    <input id="userFileText" placeholder="File url for that user" type="text" name="UserSentText">
+                </div>
+                <div class="button-container">
+                    <button onclick={onClickSendFile()}>SendFile</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <p>Ответ:</p>
+            <div id="outcome" class="outcome">Outcome</div>
+        </div>
+    </section>
+</body>
+</html>
